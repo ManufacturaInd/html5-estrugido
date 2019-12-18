@@ -1,13 +1,13 @@
-/*! HTML5 Estrugido, 
-    uma versão light do HTML5 Boilerplate v7.2.0 | MIT License
+/*! HTML5 Estrugido, uma versão light do HTML5 Boilerplate v7.2.0
     https://html5boilerplate.com
 */
 
-/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/* main.css 2.0.0 | Licença MIT | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
+ * O CSS que se segue é uma compilação de investigação sobre estilos que 
+ * funcionam em vários browsers. Cada parte está documentada com links para a
+ * referência original. Muitos agradecimentos a Nicolas Gallagher, 
+ * Jonathan Neal, Kroc Camen, à comunidade e à equipa do H5Boilerplate.
  */
 
 /* ==========================================================================
@@ -24,11 +24,12 @@ html {
  * Retirar a sombra do texto, quando está selecionado:
  * https://twitter.com/miketaylr/status/12228805301
  *
- * Precisamos de anular a sombra com prefixo dos browsers individualmente, 
+ * Precisamos de anular a sombra, individualmente, para a classe geral 
+ * (::selection) e para a classe com prefixo do browser (::-moz-selection), 
  * como explica este artigo:
  * https://stackoverflow.com/a/16982510/7133471
  *
- * Mudar esta cor de seleção de acordo com o esquema de cores do site.
+ * Mudar esta cor de fundo de seleção de acordo com o esquema de cores do site.
  */
 
 ::-moz-selection {
@@ -42,7 +43,7 @@ html {
 }
 
 /*
- * Uma hr mais bonita que a default
+ * Uma hr mais elegante que a default
  */
 
 hr {
@@ -55,8 +56,8 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
+ * Anular a distância entre os elementos audio, canvas, iframes,
+ * images, videos e o fundo do elemento que os contêm:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
@@ -70,7 +71,7 @@ video {
 }
 
 /*
- * Allow only vertical resizing of textareas.
+ * Permitir apenas o redimensionamento vertical das textareas.
  */
 
 textarea {
@@ -88,7 +89,7 @@ textarea {
    ========================================================================== */
 
 /*
- * Esconder elementos (incluindo esconder na leitura do ecrã)
+ * Esconder elementos (incluindo esconder dos leitores do ecrã)
  */
 
 .hidden {
@@ -96,11 +97,12 @@ textarea {
 }
 
 /*
-* Esconder apenas visualmente mas deixar acessível a leitores de ecrã:
+* Esconder visualmente mas deixar o conteúdo acessível a leitores de ecrã:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 *
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
+* 1. No caso de conteúdos longos, as quebras de linha não são interpretadas 
+*    como espaços e, em larguras pequenas, o conteúdo é quebrado
+*    com uma palavra por linha:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
 
@@ -118,8 +120,8 @@ textarea {
 }
 
 /*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
+* Extensão da classe .sr-only para permitir que o elemento
+* seja assinalado (focus) quando a página é navegada por teclado:
 * https://www.drupal.org/node/897638
 */
 
@@ -136,9 +138,11 @@ textarea {
 
 
 /*
-* Clearfix: contain floats
+* Clearfix: conter os floats
 *
-* For modern browsers
+* Incluir esta classe em elementos HTML que contenham elementos floated
+*
+* Para browsers modernos
 * 1. The space content is one way to avoid an Opera bug when the
 *    `contenteditable` attribute is included anywhere else in the document.
 *    Otherwise it causes space to appear at the top and bottom of elements
@@ -198,9 +202,9 @@ textarea {
     content: " (" attr(title) ")";
   }
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
@@ -214,9 +218,9 @@ textarea {
     break-inside: avoid;
   }
   /*
-     * Regras de impressão para tabelas:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+   * Regras de impressão para tabelas:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
   thead {
     display: table-header-group;
   }
