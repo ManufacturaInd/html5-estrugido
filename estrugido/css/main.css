@@ -1,4 +1,7 @@
-/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Estrugido, 
+    uma versão light do HTML5 Boilerplate v7.2.0 | MIT License
+    https://html5boilerplate.com
+*/
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -8,23 +11,24 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   Estilos base: defaults com atitude.
    ========================================================================== */
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 100%;
   line-height: 1.4;
 }
 
 /*
- * Remove text-shadow in selection highlight:
+ * Retirar a sombra do texto, quando está selecionado:
  * https://twitter.com/miketaylr/status/12228805301
  *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * Precisamos de anular a sombra com prefixo dos browsers individualmente, 
+ * como explica este artigo:
  * https://stackoverflow.com/a/16982510/7133471
  *
- * Customize the background color to match your design.
+ * Mudar esta cor de seleção de acordo com o esquema de cores do site.
  */
 
 ::-moz-selection {
@@ -38,7 +42,7 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
+ * Uma hr mais bonita que a default
  */
 
 hr {
@@ -66,16 +70,6 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
  * Allow only vertical resizing of textareas.
  */
 
@@ -83,27 +77,18 @@ textarea {
   resize: vertical;
 }
 
+
 /* ==========================================================================
-   Browser Upgrade Prompt
+   Colocar aqui os estilos do site
    ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
+   
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
+   Classes pre-preparadas para resolver situações comuns
    ========================================================================== */
 
 /*
- * Hide visually and from screen readers
+ * Esconder elementos (incluindo esconder na leitura do ecrã)
  */
 
 .hidden {
@@ -111,7 +96,7 @@ textarea {
 }
 
 /*
-* Hide only visually, but have it available for screen readers:
+* Esconder apenas visualmente mas deixar acessível a leitores de ecrã:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 *
 * 1. For long content, line feeds are not interpreted as spaces and small width
@@ -149,13 +134,6 @@ textarea {
   width: auto;
 }
 
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
-.invisible {
-  visibility: hidden;
-}
 
 /*
 * Clearfix: contain floats
@@ -182,26 +160,21 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries para design responsivo. Acrescentar conforme necessário.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 639px) { /* estilos para ecrãs pequenos */
 }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  /* Estilos para impressão e aparelhos com ecrã de alta resolução */
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
+   Estilos para impressão base. Editar e acrescentar conforme necessário.
    ========================================================================== */
 
 @media print {
@@ -210,7 +183,7 @@ textarea {
   *:after {
     background: transparent !important;
     color: #000 !important;
-    /* Black prints faster */
+    /* Preto é a cor que imprime mais rápido (-: */
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -238,10 +211,10 @@ textarea {
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
+    break-inside: avoid;
   }
   /*
-     * Printing Tables:
+     * Regras de impressão para tabelas:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
      */
   thead {
@@ -249,7 +222,7 @@ textarea {
   }
   tr,
   img {
-    page-break-inside: avoid;
+    break-inside: avoid;
   }
   p,
   h2,
@@ -259,7 +232,7 @@ textarea {
   }
   h2,
   h3 {
-    page-break-after: avoid;
+    break-after: avoid;
   }
 }
 
